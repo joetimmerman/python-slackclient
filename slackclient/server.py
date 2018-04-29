@@ -255,7 +255,7 @@ class Server(object):
 
         :Args:
             channel (str) - the string identifier for a channel or channel name (e.g. 'C1234ABC',
-            'bot-test' or '#bot-test')   
+            'bot-test' or '#bot-test')
             thread (str or None) - the parent message ID, if sending to a
                 thread
             reply_broadcast (bool) - if messaging a thread, whether to
@@ -264,7 +264,7 @@ class Server(object):
         :Returns:
             None
 
-        """    
+        """
         message_json = {"id": 1, "type": "typing", "channel": channel}
         if thread is not None:
             message_json["thread_ts"] = thread
